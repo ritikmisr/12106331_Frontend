@@ -1,0 +1,56 @@
+.chart-container {
+  width: 100%;
+  max-width: 800px;
+  overflow-x: auto;
+  margin: 20px auto;
+  background-color: #2d3b4a;  
+  border-radius: 12px;  
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+      max-width: 100%;
+      padding: 15px;
+  }
+}
+
+h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sparkline-chart {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.apexcharts-canvas {
+  background: #2c2c2c;
+}
+
+.apexcharts-tooltip {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000000;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.apexcharts-xaxis-label, .apexcharts-yaxis-label {
+  color: #cccccc; 
+  font-weight: 500;
+}
+
+.apexcharts-grid {
+  stroke: #555;
+}
